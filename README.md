@@ -1,6 +1,6 @@
 # CTF Platform Frontend
 
-This is the frontend for the CTF Platform, built with React and Vite.
+This is the frontend for the CTF Platform, built with React, TypeScript, and Vite.
 
 ## Project Structure
 
@@ -10,24 +10,26 @@ frontend/
 ├── src/
 │   ├── components/
 │   │   ├── Auth/
-│   │   │   ├── Login.jsx
-│   │   │   └── Register.jsx
+│   │   │   ├── Login.tsx
+│   │   │   └── Register.tsx
 │   │   ├── Common/
-│   │   │   ├── NotFound.jsx
-│   │   │   └── ProtectedRoute.jsx
+│   │   │   ├── NotFound.tsx
+│   │   │   └── ProtectedRoute.tsx
 │   │   ├── Layout/
-│   │   │   ├── Footer.jsx
-│   │   │   └── Navbar.jsx
-│   │   ├── Home.jsx
+│   │   │   ├── Footer.tsx
+│   │   │   └── Navbar.tsx
+│   │   ├── Home.tsx
 │   │   └── ... (other components)
 │   ├── services/
-│   │   └── api.js
-│   ├── App.jsx
-│   ├── main.jsx
+│   │   └── api.ts
+│   ├── App.tsx
+│   ├── main.tsx
 │   └── index.css
 ├── index.html
 ├── package.json
-└── vite.config.js
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
 ```
 
 ## Getting Started
@@ -116,14 +118,23 @@ docker-compose -f docker-compose.dev.yml up
 
 This will start both the backend and frontend containers. The frontend will be available at http://localhost:5173 with hot reloading enabled.
 
+### TypeScript
+
+This project uses TypeScript for type safety. When adding new code, make sure to:
+
+1. Use appropriate type annotations for variables, function parameters, and return types
+2. Create interfaces for component props and state
+3. Use React.FC type for functional components
+
 ### Adding New Components
 
-1. Create a new component in the appropriate directory under `src/components/`
-2. Import and use the component in other components or add it to the routing in `App.jsx`
+1. Create a new component in the appropriate directory under `src/components/` with a `.tsx` extension
+2. Define interfaces for component props and state
+3. Import and use the component in other components or add it to the routing in `App.tsx`
 
 ### Adding New API Services
 
-1. Add new API service functions in `src/services/api.js`
+1. Add new API service functions in `src/services/api.ts` with appropriate type annotations
 2. Import and use the service functions in your components
 
 ## Authentication
