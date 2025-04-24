@@ -66,6 +66,31 @@ The application will be available at http://localhost:5173.
 
 The frontend communicates with the Django REST API backend. API requests are handled by the `api.js` service, which uses Axios for HTTP requests.
 
+### Available Endpoints
+
+The following API endpoints are available for integration:
+
+#### Authentication
+- `POST /api/token/` - Login and obtain JWT token
+- `POST /api/register/` - Register a new user
+
+#### Profile
+- `GET /api/profile/` - Get user profile
+- `PUT /api/profile/edit/` - Update user profile
+
+#### Teams
+- `GET /api/teams/` - Get all teams
+- `GET /api/teams/{id}/` - Get a specific team
+- `POST /api/teams/` - Create a new team
+- `POST /api/team/join/` - Join a team using invite code
+
+#### Challenges
+- `GET /api/challenges/` - Get all challenges
+- `POST /api/challenges/{id}/submit/` - Submit a flag for a challenge
+
+#### Leaderboard
+- `GET /api/leaderboard/` - Get the leaderboard
+
 ## Building for Production
 
 To build the application for production:
