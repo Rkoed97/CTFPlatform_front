@@ -1,0 +1,169 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark theme (default) */
+:root, .dark-theme {
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+/* Light theme */
+.light-theme {
+  color-scheme: light;
+  color: #213547;
+  background-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Navbar styles */
+.navbar {
+  padding: 1rem 0;
+}
+.dark-theme .navbar {
+  background-color: #1a1a1a;
+}
+.light-theme .navbar {
+  background-color: #f9f9f9;
+}
+
+/* Navbar brand */
+.navbar-brand {
+  font-weight: bold;
+}
+.dark-theme .navbar-brand {
+  color: #ffffff;
+}
+.light-theme .navbar-brand {
+  color: #213547;
+}
+
+/* Navigation links */
+.nav-link {
+  margin: 0 0.5rem;
+}
+.dark-theme .nav-link {
+  color: #ffffff;
+}
+.light-theme .nav-link {
+  color: #213547;
+}
+
+.dark-theme .nav-link:hover {
+  color: #646cff;
+}
+.light-theme .nav-link:hover {
+  color: #747bff;
+}
+
+/* Cards */
+.card {
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+.dark-theme .card {
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+}
+.light-theme .card {
+  background-color: #f9f9f9;
+  color: #213547;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #646cff;
+  border-color: #646cff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #535bf2;
+  border-color: #535bf2;
+}
+
+.light-theme .btn-primary {
+  background-color: #747bff;
+  border-color: #747bff;
+}
+
+.light-theme .btn-primary:hover {
+  background-color: #646cff;
+  border-color: #646cff;
+}
+
+/* Form controls */
+.form-control {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid;
+  width: 100%;
+}
+
+.dark-theme .form-control {
+  background-color: #2a2a2a;
+  border-color: #444;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.light-theme .form-control {
+  background-color: #ffffff;
+  border-color: #ddd;
+  color: #213547;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  border-radius: 4px;
+  padding: 0.5rem 0;
+}
+
+.dark-theme .dropdown-menu {
+  background-color: #2a2a2a;
+  border-color: #444;
+}
+
+.light-theme .dropdown-menu {
+  background-color: #ffffff;
+  border-color: #ddd;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem;
+}
+
+.dark-theme .dropdown-item {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.light-theme .dropdown-item {
+  color: #213547;
+}
+
+.dark-theme .dropdown-item:hover {
+  background-color: #3a3a3a;
+}
+
+.light-theme .dropdown-item:hover {
+  background-color: #f0f0f0;
+}
